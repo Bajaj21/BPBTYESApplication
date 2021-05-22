@@ -61,11 +61,7 @@ class QrScanDashboard extends React.Component {
 
           <TouchableOpacity onPress={() => { this.props.navigation.navigate('History') }}>
 
-          {/* <LinearGradient colors={['#009688', '#3294a8',]}
-                start={{ x: 0, y: 0.5 }}
-                end={{ x: 1, y: 0.5 }}>
- */}
-            <View style={[style.buttonView, { marginTop: 20, justifyContent: 'center', alignItems: 'center' }]}>
+            <View style={[style.buttonView, { backgroundColor:'#555CC4',marginTop: 20, justifyContent: 'center', alignItems: 'center' }]}>
               <View>
                 {/* <Image style={style.image}source={require(path+'to-do-list.png')} /> */}
               </View>
@@ -75,7 +71,6 @@ class QrScanDashboard extends React.Component {
                   <Text style={style.buttonText}>Check-In-History</Text>
                 </View>
               </View>
-              {/* </LinearGradient> */}
 
           </TouchableOpacity>
 
@@ -129,7 +124,7 @@ const style = StyleSheet.create({
   },
   buttonText: {
     fontSize: 20,
-    color: "black",
+    color: "white",
     fontWeight: 'bold',
     // marginLeft:30    // alignSelf: "center",
     // textTransform: "uppercase"
