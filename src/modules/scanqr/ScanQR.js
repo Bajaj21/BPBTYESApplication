@@ -16,6 +16,7 @@ import { RNCamera } from 'react-native-camera';
 class ScanQR extends Component {
   onSuccess = e => {
     // Linking.openURL(e.data).catch(err =>
+    alert(e.data)
       console.log('An error occured', e.data)
     // );
   };
