@@ -15,7 +15,7 @@ const iconProfile = require('../../../assets/images/drawer/icon/profile.png');
 const iconPassword = require('../../../assets/images/drawer/icon/password.png');
 const iconLogout = require('../../../assets/images/drawer/icon/logout.png');
 const iconSettings = require('../../../assets/images/drawer/icon/settings.png');
-
+const qr = require('../../../assets/images/drawer/icon/qr.png');
 import LinearGradient from 'react-native-linear-gradient';
 import { useContext } from 'react';
 import * as TokenUtils from "../../utils/TokenUtils";
@@ -41,9 +41,14 @@ const drawerData = [
 		icon: iconPassword,
 	},
 	{
+		name: 'Qr Scan',
+		icon: qr,
+	},
+	{
 		name: 'Settings',
 		icon: iconSettings,
 	}
+
 ];
 
 const Drawer = createDrawerNavigator();

@@ -9,8 +9,11 @@ import SettingsScreen from '../settings/Settings';
 import AccessWebTokenScreen from '../accessWebToken/AcessWebToken';
 import EventCreateScreen from '../event/EventCreate';
 import EventListScreen from '../event/EventList';
-
+import QrScanScreen from '../qrscandashboard/QrScanDashboard'
+import ScanQRScreen from '../scanqr/ScanQR'
+import HistoryScreen from '../history/History'
 import { colors, fonts } from '../../styles';
+// import QrScan from '../qrscan/QrScan';
 const TITLE_OFFSET_CENTER_ALIGN = Platform.OS === 'ios' ? 70 : 56;
 const TITLE_OFFSET_LEFT_ALIGN = Platform.OS === 'ios' ? 20 : 56;
 
@@ -73,6 +76,47 @@ const StackNavigationData = [
 		},
 	},
 	{
+		name: 'Qr Scan',
+		component: QrScanScreen,
+		headerLeft: headerLeftComponent,
+		headerBackground: { source: headerBackground },
+		headerTitleStyle: {
+			fontFamily: fonts.primaryRegular,
+			color: colors.white,
+			fontSize: 18,
+			alignSelf: 'center',
+			marginRight: '15%'
+		},
+	},
+	{
+		name: 'ScanQR',
+		component: ScanQRScreen,
+		headerLeft: headerLeftComponent,
+		headerBackground: { source: headerBackground },
+		headerTitleStyle: {
+			fontFamily: fonts.primaryRegular,
+			color: colors.white,
+			fontSize: 18,
+			alignSelf: 'center',
+			marginRight: '15%'
+		},
+	},
+
+	{
+		name: 'History',
+		component: HistoryScreen,
+		headerLeft: headerLeftComponent,
+		headerBackground: { source: headerBackground },
+		headerTitleStyle: {
+			fontFamily: fonts.primaryRegular,
+			color: colors.white,
+			fontSize: 18,
+			alignSelf: 'center',
+			marginRight: '15%'
+		},
+	},
+
+	{
 		name: 'Access Web Version',
 		component: AccessWebTokenScreen,
 		headerLeft: headerLeftComponent,
@@ -85,6 +129,7 @@ const StackNavigationData = [
 			marginRight: '15%'
 		},
 	},
+
 	{
 		name: 'Profiles',
 		component: AvailableInFullVersion,
