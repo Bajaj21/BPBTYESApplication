@@ -76,7 +76,7 @@ const StackNavigationData = [
 		},
 	},
 	{
-		name: 'Qr Scan',
+		name: 'Site Check-In',
 		component: QrScanScreen,
 		headerLeft: headerLeftComponent,
 		headerBackground: { source: headerBackground },

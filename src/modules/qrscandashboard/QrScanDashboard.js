@@ -6,23 +6,11 @@ import { List } from 'react-native-paper'
 import LinearGradient from 'react-native-linear-gradient';
 
 
-const checkIn = () => {
-  alert('Check in')
-}
 
-const checkOut = () => {
-  alert('Check Out')
-}
 
-const showData = (props) => {
-  // this.props.navigation.navigate('LeaderBoard')
-}
-const arr = [
-  { name: 'amir' },
-  { name: 'salman' },
-  { name: 'ajay' }
-]
-
+let checkIn = "Check-In";
+let checkOut = "Check-Out";
+let checkInHistory = "Check-In-History";
 const path = '../../../assets/images/home/'
 class QrScanDashboard extends React.Component {
   constructor(props) {
@@ -37,13 +25,13 @@ class QrScanDashboard extends React.Component {
         <StatusBar backgroundColor="#009688"></StatusBar>
         <View style={style.buttonMainView}>
 
-          <TouchableOpacity onPress={() => { this.props.navigation.navigate('ScanQR') }}>
-            <View style={[style.buttonView, { marginTop: 5, backgroundColor: 'green', alignItems: 'center', justifyContent: 'center' }]}>
+          <TouchableOpacity onPress={() => { this.props.navigation.navigate('Site Check-In') }}>
+            <View style={[style.buttonView, { marginTop: 25, backgroundColor: 'green', alignItems: 'center', justifyContent: 'center' }]}>
               <View>
                 {/* <Image resizeMode="center"style={style.image}source={require(path+'clipboard.png')} /> */}
               </View>
               <View>
-                <Text style={[style.buttonText, { fontSize: 20, color: 'white' }]}>Check-In</Text>
+                <Text style={[style.buttonText, {  color: 'white' }]}>{checkIn.toUpperCase()}</Text>
               </View>
             </View>
           </TouchableOpacity>
@@ -54,7 +42,7 @@ class QrScanDashboard extends React.Component {
                 {/* <Image style={style.image}source={require(path+'audit.png')} /> */}
               </View>
               <View>
-                <Text style={[style.buttonText, { fontSize: 20, color: 'white' }]}>Check-Out</Text>
+                <Text style={[style.buttonText, {  color: 'white' }]}>{checkOut.toUpperCase()}</Text>
               </View>
             </View>
           </TouchableOpacity>
@@ -68,7 +56,7 @@ class QrScanDashboard extends React.Component {
 
 
                 <View>
-                  <Text style={style.buttonText}>Check-In-History</Text>
+                  <Text style={style.buttonText}>{checkInHistory.toUpperCase()}</Text>
                 </View>
               </View>
 
@@ -123,7 +111,7 @@ const style = StyleSheet.create({
     // marginLeft:20
   },
   buttonText: {
-    fontSize: 20,
+    fontSize: 28,
     color: "white",
     fontWeight: 'bold',
     // marginLeft:30    // alignSelf: "center",

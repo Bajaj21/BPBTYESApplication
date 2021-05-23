@@ -41,7 +41,7 @@ const drawerData = [
 		icon: iconPassword,
 	},
 	{
-		name: 'Qr Scan',
+		name: 'Site Check-In',
 		icon: qr,
 	},
 	{
