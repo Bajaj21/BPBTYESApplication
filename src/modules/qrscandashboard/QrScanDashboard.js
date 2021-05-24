@@ -25,7 +25,7 @@ class QrScanDashboard extends React.Component {
         <StatusBar backgroundColor="#009688"></StatusBar>
         <View style={style.buttonMainView}>
 
-          <TouchableOpacity onPress={() => { this.props.navigation.navigate('Site Check-In') }}>
+          <TouchableOpacity onPress={() => { this.props.navigation.navigate('ScanQR') }}>
             <View style={[style.buttonView, { marginTop: 25, backgroundColor: 'green', alignItems: 'center', justifyContent: 'center' }]}>
               <View>
                 {/* <Image resizeMode="center"style={style.image}source={require(path+'clipboard.png')} /> */}

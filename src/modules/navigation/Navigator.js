@@ -37,13 +37,15 @@ const drawerData = [
 		icon: iconProfile,
 	},
 	{
-		name: 'Access Web Version',
-		icon: iconPassword,
-	},
-	{
 		name: 'Site Check-In',
 		icon: qr,
 	},
+
+	{
+		name: 'Access Web Version',
+		icon: iconPassword,
+	},
+
 	{
 		name: 'Settings',
 		icon: iconSettings,

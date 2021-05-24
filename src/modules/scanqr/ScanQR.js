@@ -12,10 +12,18 @@ import {
 
 import QRCodeScanner from 'react-native-qrcode-scanner';
 import { RNCamera } from 'react-native-camera';
+import { getToken } from '../../utils/TokenUtils';
+// import {getToken} from "../utils/TokenUtils";
+// import 
+
+ const url = "https://demo.bpbytes.com.au/Api/V8/module/bp_CheckIn?fields[bp_CheckIn]=assigned_user_id,assigned_user_name,fp_event_locations_id,location,checkin_date_time,status&filter[operator]=and&filter[assigned_user_id][eq]=1&filter[fp_event_locations_id][eq]=6f05011f-9e97-7334-36da-5f352aa11468&filter[status][eq]=On-Site";
 
 class ScanQR extends Component {
   onSuccess = e => {
     // Linking.openURL(e.data).catch(err =>
+
+    console.log("-----------------"+getToken.toString())
+    // API.checkInExist(data,)
     alert(e.data)
       console.log('An error occured', e.data)
     // );

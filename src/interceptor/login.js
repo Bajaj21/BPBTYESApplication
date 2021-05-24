@@ -1,4 +1,7 @@
 import axios from 'axios';
+
+
+
 const config = {
 	'content-type': 'application/json'
 }
@@ -12,3 +15,5 @@ export default {
 			data: data
 		}).then(res => res),
 }
+ 
+
