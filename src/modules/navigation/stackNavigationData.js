@@ -10,6 +10,7 @@ import AccessWebTokenScreen from '../accessWebToken/AcessWebToken';
 import EventCreateScreen from '../event/EventCreate';
 import EventListScreen from '../event/EventList';
 import QrScanScreen from '../qrscandashboard/QrScanDashboard'
+import ScanCheckOutScreen from '../scanqr/ScanCheckOut'
 import ScanQRScreen from '../scanqr/ScanQR'
 import HistoryScreen from '../history/History'
 import { colors, fonts } from '../../styles';
@@ -115,6 +116,25 @@ const StackNavigationData = [
 			marginRight: '15%'
 		},
 	},
+
+
+	{
+		name: 'ScanCheckOut',
+		component: ScanCheckOutScreen,
+		headerLeft: headerLeftComponent,
+		headerBackground: { source: headerBackground },
+		headerTitleStyle: {
+			fontFamily: fonts.primaryRegular,
+			color: colors.white,
+			fontSize: 18,
+			alignSelf: 'center',
+			marginRight: '15%'
+		},
+	},
+
+
+
+
 
 	{
 		name: 'Access Web Version',
